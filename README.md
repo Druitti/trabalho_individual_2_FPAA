@@ -54,11 +54,23 @@ T(n) = 2T(n/2) + O(1)
    ```
    n^log_2(2) = n^1 = n
    ```
-3. O Teorema Mestre se encaixa no **Caso 1** (*O(1) < T(n^**p**)* com **p = log_b a**).
+
+3. Os três casos do Teorema Mestre são:
+
+#### Caso 1:  
+Se **( f(n) < n log_b a ), então ( T(n) = O(n^p) ).**   
+#### Caso 2:   
+Se **( f(n) = n log_b a ), então ( T(n) = O(n^p \log n) ).**  
+#### Caso 3:  
+Se **( f(n) > n log_b a ), então  T(n) = O(f(n)  ).**
+
+ O Teorema Mestre se encaixa no **Caso 1** (*O(1) < T(n^**log_b a**)*).
+
+
 4. Solução assintótica:
    ```
-   T(n) = Θ(n^log_2(2) * log n) = Θ(n*log n)
+   T(n) = Θ(n^log_2(2)) = Θ(n)
    ```
 
-O algoritmo possui complexidade **O(n log n)**, o que é eficiente para este problema.
+O algoritmo possui complexidade **Θ(n)**, o que é eficiente para este problema.
 
