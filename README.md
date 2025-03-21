@@ -1,2 +1,64 @@
-# trabalho_individual_2_FPAA
-Trabalho da matéria de Fundamentos de Projetos de Análise de Algorítmo 
+
+# Algoritmo MaxMin Select
+
+## Descrição do Projeto
+Este projeto implementa o algoritmo **MaxMin Select**, que encontra simultaneamente o maior e o menor elemento de um array utilizando a técnica de **Divisão e Conquista**.
+
+### Explicação do Algoritmo
+O algoritmo segue os seguintes passos:
+1. **Caso base**:
+   - Se houver apenas um elemento, ele é retornado como o máximo e o mínimo.
+   - Se houver dois elementos, eles são comparados diretamente.
+2. **Divisão**:
+   - O array é dividido ao meio recursivamente.
+3. **Conquista**:
+   - O menor e o maior de cada metade são encontrados recursivamente.
+4. **Combinação**:
+   - Os resultados das metades são combinados para encontrar o menor e o maior do array inteiro.
+
+## Como Executar o Projeto
+Para rodar o projeto em seu ambiente local, siga os passos:
+1. Instale o **Python 3.10+**.
+2. Clone este repositório:
+   ```bash
+   git clone https://github.com/Druitti/trabalho_individual_2_FPAA.git
+
+   cd trabalho_individual_2_FPAA
+   ```
+3. Execute o código Python:
+   ```bash
+   python src/app.py
+   ```
+
+## Relatório Técnico
+### Análise da Complexidade Assintótica por Contagem de Operações
+
+O algoritmo realiza **n-1** comparações no pior caso, e **cerca de 3n/2** comparações em média, reduzindo o número de operações em comparação com a abordagem ingêna, que requer 2(n-1) comparações.
+
+1. Cada chamada recursiva divide o array em duas metades.
+2. O número total de comparações é aproximadamente **3n/2**.
+3. Portanto, a complexidade é **O(n)**.
+
+### Análise da Complexidade pelo Teorema Mestre
+A recorrência do algoritmo é:
+```
+T(n) = 2T(n/2) + O(1)
+```
+
+1. Identificação dos valores:
+   - **a = 2** (duas chamadas recursivas)
+   - **b = 2** (problema dividido ao meio)
+   - **f(n) = O(1)** (operação de combinação)
+
+2. Calculando ** n ^log_b a**:
+   ```
+   n^log_2(2) = n^1 = n
+   ```
+3. O Teorema Mestre se encaixa no **Caso 1** (*O(1) < T(n^**p**)* com **p = log_b a**).
+4. Solução assintótica:
+   ```
+   T(n) = Θ(n^log_2(2) * log n) = Θ(n*log n)
+   ```
+
+O algoritmo possui complexidade **O(n log n)**, o que é eficiente para este problema.
+
