@@ -74,3 +74,15 @@ Se **( f(n) > n log_b a ), então  T(n) = O(f(n)  ).**
 
 O algoritmo possui complexidade **Θ(n)**, o que é eficiente para este problema.
 
+5. Diagrama Visual da Divisão e Conquista:
+
+O diagrama abaixo ilustra a divisão e combinação do algoritmo MaxMin Select:
+
+
+
+## Fluxo de Ida do Algorítmo
+![Diagrama MaxMin](imgs/Diagram_maxmin2.png)
+
+## Fluxo de Retorno do Algorítmo
+![Diagrama MaxMin](imgs/Diagram_maxmin_return.png)
+
