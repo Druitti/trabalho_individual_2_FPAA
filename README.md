@@ -57,6 +57,7 @@ T(n) = 2T(n/2) + O(1)
 
 3. Os três casos do Teorema Mestre são:
 
+
 #### Caso 1:  
 Se **( f(n) < n log_b a ), então ( T(n) = O(n^p) ).**   
 #### Caso 2:   
@@ -81,8 +82,8 @@ O diagrama abaixo ilustra a divisão e combinação do algoritmo MaxMin Select:
 
 
 ## Fluxo de Ida do Algorítmo
-![Diagrama MaxMin](imgs/Diagram_maxmin2.png)
+![Diagram_maxmin2](https://github.com/user-attachments/assets/03721449-ddeb-4719-9d47-f98c89e56695)
 
 ## Fluxo de Retorno do Algorítmo
-![Diagrama MaxMin](imgs/Diagram_maxmin_return.png)
+![Diagram_maxmin_return](https://github.com/user-attachments/assets/b68f4d17-3f56-4083-9888-086376573895)
 
